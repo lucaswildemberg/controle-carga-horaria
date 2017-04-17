@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SEDIS - Ajuste de Carga Horária</title>
+    <!-- css tables -->
+    <link href="css/dataTable.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- fontAwesome -->
+    <script src="https://use.fontawesome.com/e61a959789.js"></script>
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Controle de Carga Horária</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Início</a></li>
+              <li><a href="historico.html">Históricos</a></li>
+            <li class="active"><a href="#">Contato com Desenvolvimento</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+
+    <div class="container">
+        <!-- Page Content -->
+        <div class="container-form">
+            <form id="contact" action="" method="post">
+                <h3><img src="logo.png"/></h3>
+                <h4>Contato com o desenvolvimento</h4>
+                <fieldset>
+                    <input placeholder="Seu nome" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Seu endereço de e-mail" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Descreva sua solitação...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" class="button-send" type="submit" id="contact-submit" data-submit="...Enviando">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/dataTables.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('#example').DataTable({
+        "language": {
+              "lengthMenu": "Mostrando _MENU_ registros por página",
+              "zeroRecords": "Nenhum registro encontrado",
+              "info": "Mostrando página _PAGE_ de _PAGES_",
+              "infoEmpty": "Nenhum registro disponível",
+              "infoFiltered": "(filtrado de _MAX_ registros no total)",
+              "sSearch": "Pesquisar:"
+          }
+      });
+  });
+    </script>
+</body>
+
+</html>
